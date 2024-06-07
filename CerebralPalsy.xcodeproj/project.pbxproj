@@ -7,18 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B60B6DB42C12E144003EE4FB /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60B6DB32C12E144003EE4FB /* Types.swift */; };
+		B60B6DB62C12EEE9003EE4FB /* CPCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60B6DB52C12EEE9003EE4FB /* CPCard.swift */; };
+		B637C63D2C11F60600BB8356 /* CerebralPalsy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B637C63C2C11F60600BB8356 /* CerebralPalsy.swift */; };
+		B637C6412C11F75E00BB8356 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B637C6402C11F75E00BB8356 /* DataService.swift */; };
 		B6FFAD0E2C11CAA300388F4B /* CerebralPalsyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FFAD0D2C11CAA300388F4B /* CerebralPalsyApp.swift */; };
-		B6FFAD102C11CAA300388F4B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FFAD0F2C11CAA300388F4B /* ContentView.swift */; };
+		B6FFAD102C11CAA300388F4B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FFAD0F2C11CAA300388F4B /* MainView.swift */; };
 		B6FFAD122C11CAA600388F4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6FFAD112C11CAA600388F4B /* Assets.xcassets */; };
 		B6FFAD152C11CAA600388F4B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6FFAD142C11CAA600388F4B /* Preview Assets.xcassets */; };
+		B6FFAD1D2C11CB2700388F4B /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FFAD1C2C11CB2700388F4B /* AboutView.swift */; };
+		B6FFAD1F2C11CB4100388F4B /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FFAD1E2C11CB4100388F4B /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B60B6DB32C12E144003EE4FB /* Types.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
+		B60B6DB52C12EEE9003EE4FB /* CPCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPCard.swift; sourceTree = "<group>"; };
+		B637C63C2C11F60600BB8356 /* CerebralPalsy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CerebralPalsy.swift; sourceTree = "<group>"; };
+		B637C6402C11F75E00BB8356 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		B6FFAD0A2C11CAA300388F4B /* CerebralPalsy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CerebralPalsy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6FFAD0D2C11CAA300388F4B /* CerebralPalsyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CerebralPalsyApp.swift; sourceTree = "<group>"; };
-		B6FFAD0F2C11CAA300388F4B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B6FFAD0F2C11CAA300388F4B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		B6FFAD112C11CAA600388F4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6FFAD142C11CAA600388F4B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B6FFAD1C2C11CB2700388F4B /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		B6FFAD1E2C11CB4100388F4B /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +64,9 @@
 			isa = PBXGroup;
 			children = (
 				B6FFAD0D2C11CAA300388F4B /* CerebralPalsyApp.swift */,
-				B6FFAD0F2C11CAA300388F4B /* ContentView.swift */,
+				B6FFAD202C11CB4E00388F4B /* Models */,
+				B6FFAD1B2C11CAB100388F4B /* Views */,
+				B6FFAD212C11CB6300388F4B /* Services */,
 				B6FFAD112C11CAA600388F4B /* Assets.xcassets */,
 				B6FFAD132C11CAA600388F4B /* Preview Content */,
 			);
@@ -65,6 +79,34 @@
 				B6FFAD142C11CAA600388F4B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B6FFAD1B2C11CAB100388F4B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B6FFAD0F2C11CAA300388F4B /* MainView.swift */,
+				B60B6DB52C12EEE9003EE4FB /* CPCard.swift */,
+				B6FFAD1C2C11CB2700388F4B /* AboutView.swift */,
+				B6FFAD1E2C11CB4100388F4B /* DetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B6FFAD202C11CB4E00388F4B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B637C63C2C11F60600BB8356 /* CerebralPalsy.swift */,
+				B60B6DB32C12E144003EE4FB /* Types.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		B6FFAD212C11CB6300388F4B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B637C6402C11F75E00BB8356 /* DataService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +179,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6FFAD102C11CAA300388F4B /* ContentView.swift in Sources */,
+				B6FFAD102C11CAA300388F4B /* MainView.swift in Sources */,
+				B637C6412C11F75E00BB8356 /* DataService.swift in Sources */,
+				B6FFAD1F2C11CB4100388F4B /* DetailView.swift in Sources */,
+				B60B6DB42C12E144003EE4FB /* Types.swift in Sources */,
+				B60B6DB62C12EEE9003EE4FB /* CPCard.swift in Sources */,
+				B637C63D2C11F60600BB8356 /* CerebralPalsy.swift in Sources */,
+				B6FFAD1D2C11CB2700388F4B /* AboutView.swift in Sources */,
 				B6FFAD0E2C11CAA300388F4B /* CerebralPalsyApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
